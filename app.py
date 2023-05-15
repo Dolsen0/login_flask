@@ -18,9 +18,9 @@ def register():
 def about():
     return render_template('about.html')
 
-@app.route('/user/<name>')
+@app.route('/profile/user/<name>')
 def user(name):
-    return render_template('index.html', name=name.title())
+    return render_template('profile.html', name=name.title())
 
 if __name__ == '__main__':
     app.run()
